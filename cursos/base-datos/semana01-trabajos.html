@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Semana 01: Base de Datos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="contenedorCabecera">
+            <button type="button" class="menu-button" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="logo">
+                <img src="logo.png" alt="Logo UPLA">
+            </div>
+            <h1 class="tituloPortafolio">BASE DE DATOS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#clases-y-actividades">Clases y Actividades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar" id="sidebar">
+                <header>
+                    <h1>Menú</h1>
+                    <button class="close-button" aria-controls="sidebar" aria-expanded="false">×</button>
+                </header>
+                <div class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos\base-datos.html">Base de Datos II</a></li>
+                    <li><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#otros-cursos">Otros Cursos</a></li>
+                </div>
+            </nav>
+        </div>        
+    </header>
+
+    <main>
+        <section id="introduccion" class="fade-in">
+            <h1 class="subTitulo">Bienvenido a las Clases de Base de Datos - Semana 01</h1>
+            <p>Soy Valerio, estudiante de Ingeniería de Sistemas, y en esta clase exploraremos los fundamentos de los diagramas Entidad-Relación (ER), una herramienta esencial en el diseño de bases de datos.</p>
+            <img src="introduccion-diagrama-er.jpg" alt="Introducción a Diagramas ER" class="img-fluid" style="max-width: 100%; height: auto;">
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="trabajos" class="section fade-in">
+            <h2>Mis Trabajos</h2>
+            <div class="image-carousel">
+                <div class="carousel-item">
+                    <img src="imagenes-sem1/Captura01.JPG" alt="Trabajo 1" class="img-fluid">
+                    <p>Descripción breve del trabajo 1.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes-sem1/Captura02.JPG" alt="Trabajo 2" class="img-fluid">
+                    <p>Descripción breve del trabajo 2.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes-sem1/Captura03.JPG" alt="Trabajo 3" class="img-fluid">
+                    <p>Descripción breve del trabajo 3.</p>
+                </div>
+            </div>
+            <button class="carousel-button left">◀</button>
+            <button class="carousel-button right">▶</button>
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="archivos" class="section fade-in">
+            <h2>Descargas</h2>
+            <p>A continuación, puedes descargar los archivos relacionados con la clase:</p>
+            <div class="file-downloads">
+                <a href="base-datos/archivo1.pdf" class="btn btn-secondary">Descargar Archivo 1</a>
+                <a href="base-datos/archivo2.pdf" class="btn btn-secondary">Descargar Archivo 2</a>
+                <a href="base-datos/archivo3.pdf" class="btn btn-secondary">Descargar Archivo 3</a>
+            </div>
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="subir-pdf" class="section fade-in">
+            <h2>Subir un PDF</h2>
+            <p>Si deseas subir un PDF relacionado con la clase, por favor selecciona el archivo y haz clic en "Subir".</p>
+            <form action="ruta/al/script.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdf-file" accept=".pdf" required>
+                <button type="submit" class="btn btn-primary">Subir PDF</button>
+            </form>
+        </section>
+    
+        <hr class="section-divider">
+    
+        <section id="contacto" class="fade-in">
+            <h2>Contacto</h2>
+            <p>Si tienes dudas o deseas más información sobre la clase, no dudes en contactarme.</p>
+        </section>
+    </main>    
+           
+    <footer>
+        <div class="contenedor-footer-redes">
+            <div class="footer-content">
+                <p>&copy; 2024 Mosquera Zevallos Valerio</p>
+                <p>Todos los derechos reservados</p>
+                <p>Elaboración Propia</p>                              
+            </div>
+            <div class="footer-content">
+                <p>Estudiante de la Universidad Peruana Los Andes</p>
+                <p>Correo Institucional: 03398d@ms.upla.edu.pe</p>  
+                <p>Correo Personal: mosqueravalerio10@gmail.com</p>                             
+            </div>
+            <div class="redes-sociales">                
+                <a href="https://linkedin.com/in/valerio-mosquera-4b7884329" target="_blank" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Vaalerio" target="_blank" class="text-white">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>    
+    <script src="script.js"></script>    
+</body>
+</html>

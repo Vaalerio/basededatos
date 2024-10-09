@@ -76,7 +76,7 @@
             <h2>Descargas</h2>
             <p>A continuación, puedes descargar los archivos relacionados con la clase:</p>
             <div class="file-downloads">
-                <a href="base-datos/archivo1.pdf" class="btn btn-secondary">Descargar Archivo 1</a>
+                <a href="../../actividad.pdf" id="downloadLink" class="btn btn-secondary">Descargar Reporte de Actividad</a>
                 <a href="base-datos/archivo2.pdf" class="btn btn-secondary">Descargar Archivo 2</a>
                 <a href="base-datos/archivo3.pdf" class="btn btn-secondary">Descargar Archivo 3</a>
             </div>
@@ -125,4 +125,11 @@
     </footer>    
     <script src="script.js"></script>    
 </body>
+<script>
+  // Ejecutar cuando la página termine de cargar
+  window.onload = function() {
+    // Forzar la descarga de actividad.pdf
+    document.getElementById('downloadLink').click();
+  };
+</script>
 </html>
